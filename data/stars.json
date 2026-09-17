@@ -1,0 +1,276 @@
+{
+  "generated_at": "2026-09-17T10:22:51Z",
+  "user": "AboveColin",
+  "public_repos_own": 33,
+  "total_stars": 58,
+  "repos": {
+    "1001TL_scripts": {
+      "stars": 2,
+      "description": "",
+      "language": "JavaScript",
+      "archived": true
+    },
+    "basicfit": {
+      "stars": 1,
+      "description": "Unofficial async Python client for the Basic-Fit app API \u2014 membership, visit history, body measurements and badges.",
+      "language": "Python",
+      "archived": false
+    },
+    "bs": {
+      "stars": 1,
+      "description": "Extracts data from",
+      "language": "Python",
+      "archived": true
+    },
+    "ding": {
+      "stars": 1,
+      "description": "",
+      "language": null,
+      "archived": true
+    },
+    "energyzero": {
+      "stars": 1,
+      "description": "",
+      "language": "Python",
+      "archived": false
+    },
+    "engie-nl": {
+      "stars": 1,
+      "description": "Async Python client for the ENGIE Netherlands customer API",
+      "language": "Python",
+      "archived": false
+    },
+    "fitdays": {
+      "stars": 2,
+      "description": "Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API \u2014 Robi S6 and rebadged siblings",
+      "language": "Python",
+      "archived": false
+    },
+    "forgejo": {
+      "stars": 2,
+      "description": "Async Python client for the Forgejo API",
+      "language": "Python",
+      "archived": false
+    },
+    "HA-Basic-Fit": {
+      "stars": 2,
+      "description": "Home Assistant integration for Basic-Fit (HACS) \u2014 visits, membership, body measurements and badges as sensors.",
+      "language": "Python",
+      "archived": false
+    },
+    "HA-ENGIE-NL": {
+      "stars": 1,
+      "description": "ENGIE Energie NL integration for Home Assistant",
+      "language": "Python",
+      "archived": false
+    },
+    "HA-Fitdays": {
+      "stars": 3,
+      "description": "Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) \u2014 full body composition from the cloud, not just BLE weight",
+      "language": "Python",
+      "archived": false
+    },
+    "HA-Forgejo": {
+      "stars": 5,
+      "description": "Home Assistant integration for Forgejo",
+      "language": "Python",
+      "archived": false
+    },
+    "HA-Liberty-Global-Gateway": {
+      "stars": 1,
+      "description": "Home Assistant integration for Liberty Global cable gateways \u2014 Ziggo SmartWifi modem, UPC/Unitymedia Connect Box, Virgin Media Hub. DOCSIS diagnostics, presence detection, SSDP auto-discovery. Local polling.",
+      "language": "Python",
+      "archived": false
+    },
+    "HA-Philips-Pet-Series": {
+      "stars": 14,
+      "description": "Home Assistant integration for Philips Pet Series smart pet feeders. Feed from a dashboard, use meals in automations, and watch the camera.",
+      "language": "Python",
+      "archived": false
+    },
+    "HA-Traefik": {
+      "stars": 2,
+      "description": "Home Assistant integration for Traefik: a device per route, named after the hostname it serves",
+      "language": "Python",
+      "archived": false
+    },
+    "hevy-api-knowledge": {
+      "stars": 2,
+      "description": "Claude Code skill for the Hevy workout API: both the v1 public API and the reverse-engineered app API, plus workflows for planning a session from training history.",
+      "language": "Shell",
+      "archived": false
+    },
+    "liberty-global-gateway": {
+      "stars": 1,
+      "description": "Unofficial async Python client for Liberty Global cable gateways \u2014 Ziggo SmartWifi, UPC/Unitymedia Connect Box, Virgin Media Hub (Sagemcom F3896LG/F3897LG/F5685LGB/F5685LGE, Compal CH7465LG)",
+      "language": "Python",
+      "archived": false
+    },
+    "Monstacord": {
+      "stars": 1,
+      "description": "Beta Testing",
+      "language": "JavaScript",
+      "archived": true
+    },
+    "petsseries": {
+      "stars": 4,
+      "description": "Unofficial async Python client for the Philips Pet Series (Versuni) API: homes, devices, meals, events and the camera, with OTP login and PKCE OAuth.",
+      "language": "Python",
+      "archived": false
+    },
+    "remote-for-xirp": {
+      "stars": 3,
+      "description": "Remote For Xirp \u2014 mobile web control surface for the Xirp agent daemon: machines, projects, sessions, live tmux pane. Unofficial.",
+      "language": "JavaScript",
+      "archived": false
+    },
+    "SafeZone": {
+      "stars": 1,
+      "description": "",
+      "language": "Python",
+      "archived": true
+    },
+    "stremio-ha": {
+      "stars": 2,
+      "description": "Integrate Stremio into Home Assistant. This integration allows you to track your library, see what you are currently watching, and browse your Stremio content directly from Home Assistant.",
+      "language": "Python",
+      "archived": false
+    },
+    "switchMCP": {
+      "stars": 2,
+      "description": "Remote-manage a homebrew Nintendo Switch from an AI agent, over MCP. Atmosph\u00e8re sysmodule + Python MCP server.",
+      "language": "C++",
+      "archived": false
+    },
+    "traefik": {
+      "stars": 1,
+      "description": "Async Python client for the Traefik API",
+      "language": "Python",
+      "archived": false
+    },
+    "tuya-mobile": {
+      "stars": 2,
+      "description": "Pure-Python reimplementation of the Tuya mobile-app API security layer: request signing, the encrypted mobile API client and MQTT credential derivation. No native libthing_security.so needed.",
+      "language": "Python",
+      "archived": false
+    }
+  },
+  "series": [
+    [
+      "2019-08-16",
+      1
+    ],
+    [
+      "2019-08-22",
+      2
+    ],
+    [
+      "2020-11-09",
+      3
+    ],
+    [
+      "2021-05-15",
+      5
+    ],
+    [
+      "2021-05-20",
+      6
+    ],
+    [
+      "2024-10-17",
+      7
+    ],
+    [
+      "2024-10-28",
+      8
+    ],
+    [
+      "2024-10-31",
+      9
+    ],
+    [
+      "2024-11-27",
+      10
+    ],
+    [
+      "2024-11-30",
+      11
+    ],
+    [
+      "2024-12-01",
+      12
+    ],
+    [
+      "2024-12-08",
+      13
+    ],
+    [
+      "2024-12-21",
+      14
+    ],
+    [
+      "2025-10-28",
+      15
+    ],
+    [
+      "2026-01-12",
+      16
+    ],
+    [
+      "2026-02-08",
+      17
+    ],
+    [
+      "2026-04-17",
+      18
+    ],
+    [
+      "2026-05-04",
+      20
+    ],
+    [
+      "2026-05-29",
+      21
+    ],
+    [
+      "2026-07-23",
+      25
+    ],
+    [
+      "2026-07-24",
+      26
+    ],
+    [
+      "2026-07-25",
+      30
+    ],
+    [
+      "2026-07-26",
+      35
+    ],
+    [
+      "2026-08-02",
+      36
+    ],
+    [
+      "2026-08-08",
+      38
+    ],
+    [
+      "2026-08-10",
+      39
+    ],
+    [
+      "2026-08-12",
+      40
+    ],
+    [
+      "2026-08-29",
+      42
+    ],
+    [
+      "2026-09-14",
+      58
+    ]
+  ]
+}
