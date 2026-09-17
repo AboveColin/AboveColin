@@ -377,7 +377,13 @@ def main() -> int:
     def data_of(d: dict) -> dict:
         return {k: v for k, v in d.items() if k != "generated_at"}
 
-    if previous and "--force" not in sys.argv and data_of(previous) == data_of(payload):
+    rendered = [ROOT / "assets" / f"stars-{name}.svg" for name in THEMES]
+    if (
+        previous
+        and "--force" not in sys.argv
+        and data_of(previous) == data_of(payload)
+        and all(f.exists() for f in rendered)
+    ):
         print("unchanged")
         return 0
 
