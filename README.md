@@ -80,15 +80,6 @@ that uses it.
 - [hevy-api-knowledge](https://github.com/AboveColin/hevy-api-knowledge) documents
   the Hevy workout API, both the public v1 and the one the app actually uses.
 
-### How the graph is built
-
-A scheduled workflow reads every star event from the GitHub API, writes the series
-to [`data/stars.json`](data/stars.json), renders
-[`assets/stars-light.svg`](assets/stars-light.svg) and
-[`assets/stars-dark.svg`](assets/stars-dark.svg), then rewrites the generated block
-in this file. No widget service sits in between, so the counts come straight from
-the API and nothing rate-limits the page.
-
 <p align="center">
   <a href="https://cdevries.dev">cdevries.dev</a> &middot;
   <a href="mailto:colin@cdevries.dev">colin@cdevries.dev</a> &middot;
