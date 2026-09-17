@@ -33,7 +33,7 @@ reports the revision it was given.
 </p>
 
 <p align="center">
-  <strong>58</strong> stars &middot; <strong>35</strong> own public repositories &middot; <strong>25</strong> of them starred by someone &middot; counted 2026-09-17
+  <strong>58</strong> stars &middot; <strong>35</strong> own public repositories &middot; <strong>25</strong> of them starred by someone &middot; last star 2026-09-14
 </p>
 
 ### Most starred

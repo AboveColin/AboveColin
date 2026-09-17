@@ -16,6 +16,8 @@ Two modes, because GitHub guards the two data sources differently.
       Actions GITHUB_TOKEN, which is scoped to this repository only, so this
       mode runs from a laptop with a personal token.
 
+Pass --force to re-render after a change to the template rather than the data.
+
 Both modes write data/stars.json, render assets/stars-{light,dark}.svg and
 replace the generated block in README.md.
 """
@@ -289,7 +291,7 @@ def render(payload: dict, theme_name: str) -> str:
     repos = payload["public_repos_own"]
     caption = (
         f'{repos} own public repositories, forks excluded. '
-        f'Updated {payload["generated_at"][:10]}.'
+        f'Last star {series[-1][0].isoformat()}.'
     )
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" \
@@ -347,7 +349,7 @@ def block(payload: dict, version: str) -> str:
 </p>
 
 <p align="center">
-  <strong>{total}</strong> stars &middot; <strong>{repos}</strong> own public repositories &middot; <strong>{starred}</strong> of them starred by someone &middot; counted {payload['generated_at'][:10]}
+  <strong>{total}</strong> stars &middot; <strong>{repos}</strong> own public repositories &middot; <strong>{starred}</strong> of them starred by someone &middot; last star {payload['series'][-1][0]}
 </p>
 
 ### Most starred
@@ -372,6 +374,13 @@ def main() -> int:
         print(f"rate limited on {err} and there is no earlier series to keep",
               file=sys.stderr)
         return 1
+    def data_of(d: dict) -> dict:
+        return {k: v for k, v in d.items() if k != "generated_at"}
+
+    if previous and "--force" not in sys.argv and data_of(previous) == data_of(payload):
+        print("unchanged")
+        return 0
+
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "stars.json").write_text(
         json.dumps(payload, indent=2) + "\n", encoding="utf-8"
