@@ -23,6 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Snapshot mode only. Listing the stargazers of another repository needs a
+      # token with wider reach than the Actions GITHUB_TOKEN, which is scoped to
+      # this repository, so the full history is rebuilt from a laptop with
+      # scripts/stars.py --backfill. Reading the current counts per repository
+      # needs no such reach.
       - name: Render star history
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

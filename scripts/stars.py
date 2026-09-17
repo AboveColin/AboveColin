@@ -1,11 +1,23 @@
 #!/usr/bin/env python3
 """Build the star history for AboveColin and render it into the profile README.
 
-Reads every star event (repo, starred_at) from the GitHub API, writes the
-cumulative series to data/stars.json, renders assets/stars-{light,dark}.svg and
-replaces the generated block in README.md.
+Two modes, because GitHub guards the two data sources differently.
 
-Run: GITHUB_TOKEN=... python3 scripts/stars.py
+  python3 scripts/stars.py
+      Snapshot. Reads the current star count per repository from
+      /users/AboveColin/repos, which answers without a token, and appends today
+      to the series already in data/stars.json. This is what the daily workflow
+      runs.
+
+  GITHUB_TOKEN=$(gh auth token) python3 scripts/stars.py --backfill
+      Rebuild. Reads every star event (repo, starred_at) and reconstructs the
+      whole series from scratch. /repos/{owner}/{repo}/stargazers answers 401
+      without a token and 403 "Resource not accessible by integration" for the
+      Actions GITHUB_TOKEN, which is scoped to this repository only, so this
+      mode runs from a laptop with a personal token.
+
+Both modes write data/stars.json, render assets/stars-{light,dark}.svg and
+replace the generated block in README.md.
 """
 
 from __future__ import annotations
@@ -14,6 +26,7 @@ import hashlib
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import date, datetime, timezone
@@ -53,21 +66,62 @@ PLOT_H = H - PAD_T - PAD_B
 FONT = "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif"
 
 
-def get(url: str, accept: str = "application/vnd.github+json") -> tuple[object, dict]:
+class RateLimited(Exception):
+    """GitHub answered 403 with no requests left in the window."""
+
+
+def request(url: str, accept: str, token: str | None) -> tuple[object, dict]:
     req = urllib.request.Request(url, headers={
         "Accept": accept,
         "User-Agent": f"{USER}-profile-stars",
         "X-GitHub-Api-Version": "2022-11-28",
     })
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if token:
         req.add_header("Authorization", f"Bearer {token}")
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.load(resp), dict(resp.headers)
-    except urllib.error.HTTPError as err:
-        body = err.read().decode("utf-8", "replace")[:400]
-        raise SystemExit(f"GitHub API {err.code} on {url}: {body}") from err
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.load(resp), dict(resp.headers)
+
+
+def get(url: str, accept: str = "application/vnd.github+json") -> tuple[object, dict]:
+    """Read one page, with an anonymous retry and one rate-limit retry.
+
+    The Actions GITHUB_TOKEN is scoped to this repository, so listing the
+    stargazers of any other repository answers 403 "Resource not accessible by
+    integration". Star data on a public repository is readable without a token,
+    so that is the fallback. Anonymous requests get 60 per hour per IP, hence
+    the single sleep-and-retry before giving up.
+    """
+    token = os.environ.get("STARS_TOKEN") or os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    attempts: list[str | None] = [token, None] if token else [None]
+    last: urllib.error.HTTPError | None = None
+    for waited in (False, True):
+        for attempt_token in attempts:
+            try:
+                return request(url, accept, attempt_token)
+            except urllib.error.HTTPError as err:
+                last = err
+                remaining = err.headers.get("x-ratelimit-remaining")
+                if err.code == 403 and remaining == "0":
+                    break  # No point trying the other identity on this url.
+                if err.code not in (401, 403, 404):
+                    raise SystemExit(
+                        f"GitHub API {err.code} on {url}: "
+                        f"{err.read().decode('utf-8', 'replace')[:400]}"
+                    ) from err
+        if waited:
+            break
+        if last is not None and last.code == 403 and last.headers.get("x-ratelimit-remaining") == "0":
+            print("rate limited, waiting 65s", file=sys.stderr)
+            time.sleep(65)
+        else:
+            break
+    assert last is not None
+    if last.code == 403 and last.headers.get("x-ratelimit-remaining") == "0":
+        raise RateLimited(url)
+    raise SystemExit(
+        f"GitHub API {last.code} on {url}: "
+        f"{last.read().decode('utf-8', 'replace')[:400]}"
+    )
 
 
 def paged(url: str, accept: str = "application/vnd.github+json") -> list:
@@ -87,20 +141,45 @@ def paged(url: str, accept: str = "application/vnd.github+json") -> list:
     return out
 
 
-def collect() -> dict:
+def read_repos() -> tuple[list, dict[str, dict]]:
     repos = [r for r in paged(f"{API}/users/{USER}/repos?type=owner") if not r["fork"]]
-    events: list[tuple[str, str]] = []
-    counted: dict[str, dict] = {}
-    for repo in repos:
-        if repo["stargazers_count"] == 0:
-            continue
-        name = repo["name"]
-        counted[name] = {
-            "stars": repo["stargazers_count"],
-            "description": (repo["description"] or "").strip(),
-            "language": repo["language"],
-            "archived": repo["archived"],
+    counted = {
+        r["name"]: {
+            "stars": r["stargazers_count"],
+            "description": (r["description"] or "").strip(),
+            "language": r["language"],
+            "archived": r["archived"],
         }
+        for r in repos
+        if r["stargazers_count"] > 0
+    }
+    return repos, counted
+
+
+def snapshot(previous: dict) -> dict:
+    """Extend yesterday's series with today's totals."""
+    repos, counted = read_repos()
+    total = sum(m["stars"] for m in counted.values())
+    series = [tuple(p) for p in previous.get("series", [])]
+    today = date.today().isoformat()
+    if series and series[-1][0] == today:
+        series[-1] = (today, total)
+    elif not series or series[-1][1] != total:
+        series.append((today, total))
+    return {
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "user": USER,
+        "public_repos_own": len(repos),
+        "total_stars": total,
+        "repos": counted,
+        "series": [list(p) for p in series],
+    }
+
+
+def backfill() -> dict:
+    repos, counted = read_repos()
+    events: list[tuple[str, str]] = []
+    for name in counted:
         stargazers = paged(
             f"{API}/repos/{USER}/{name}/stargazers",
             "application/vnd.github.star+json",
@@ -278,7 +357,21 @@ def block(payload: dict, version: str) -> str:
 
 
 def main() -> int:
-    payload = collect()
+    store = ROOT / "data" / "stars.json"
+    previous = json.loads(store.read_text()) if store.exists() else {}
+    try:
+        if "--backfill" in sys.argv:
+            payload = backfill()
+        else:
+            payload = snapshot(previous)
+    except RateLimited as err:
+        if store.exists():
+            print(f"rate limited on {err}; keeping the series from the last run",
+                  file=sys.stderr)
+            return 0
+        print(f"rate limited on {err} and there is no earlier series to keep",
+              file=sys.stderr)
+        return 1
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "stars.json").write_text(
         json.dumps(payload, indent=2) + "\n", encoding="utf-8"
@@ -304,7 +397,7 @@ def main() -> int:
     tail = readme.split(end)[1]
     readme_path.write_text(head + block(payload, version) + tail, encoding="utf-8")
 
-    print(f"{payload['total_stars']} stars, {len(payload['series'])} days with a star, v={version}")
+    print(f"{payload['total_stars']} stars, {len(payload['series'])} points in the series, v={version}")
     return 0
 
 
