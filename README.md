@@ -27,13 +27,13 @@ reports the revision it was given.
 <!-- stars:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=81d50b7a">
-    <img alt="Cumulative GitHub stars over time: 58 stars across 25 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=81d50b7a" width="880">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=bc230cc4">
+    <img alt="Cumulative GitHub stars over time: 66 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=bc230cc4" width="880">
   </picture>
 </p>
 
 <p align="center">
-  <strong>58</strong> stars &middot; <strong>35</strong> own public repositories &middot; <strong>25</strong> of them starred by someone &middot; last star 2026-09-14
+  <strong>66</strong> stars &middot; <strong>35</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-09-18
 </p>
 
 ### Most starred
@@ -41,6 +41,7 @@ reports the revision it was given.
 | Project | What it does | Stars |
 | --- | --- | --: |
 | [HA-Philips-Pet-Series](https://github.com/AboveColin/HA-Philips-Pet-Series) | Home Assistant integration for Philips Pet Series smart pet feeders. Feed from a dashboard, u... | 14 |
+| [HA-Jev](https://github.com/AboveColin/HA-Jev) | Home Assistant integration for TypeSafe Jev. Ask a question about your house and get a probab... | 6 |
 | [HA-Forgejo](https://github.com/AboveColin/HA-Forgejo) | Home Assistant integration for Forgejo | 5 |
 | [petsseries](https://github.com/AboveColin/petsseries) | Unofficial async Python client for the Philips Pet Series (Versuni) API: homes, devices, meal... | 4 |
 | [HA-Fitdays](https://github.com/AboveColin/HA-Fitdays) | Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) — full body compositio... | 3 |
@@ -49,7 +50,6 @@ reports the revision it was given.
 | [HA-Traefik](https://github.com/AboveColin/HA-Traefik) | Home Assistant integration for Traefik: a device per route, named after the hostname it serves | 2 |
 | [fitdays](https://github.com/AboveColin/fitdays) | Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API — Robi S6 and r... | 2 |
 | [forgejo](https://github.com/AboveColin/forgejo) | Async Python client for the Forgejo API | 2 |
-| [hevy-api-knowledge](https://github.com/AboveColin/hevy-api-knowledge) | Claude Code skill for the Hevy workout API: both the v1 public API and the reverse-engineered... | 2 |
 <!-- stars:end -->
 
 ### Device to dashboard

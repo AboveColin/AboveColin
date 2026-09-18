@@ -1,14 +1,20 @@
 {
-  "generated_at": "2026-09-17T11:23:49Z",
+  "generated_at": "2026-09-18T09:50:54Z",
   "user": "AboveColin",
   "public_repos_own": 35,
-  "total_stars": 58,
+  "total_stars": 66,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
       "description": "",
       "language": "JavaScript",
       "archived": true
+    },
+    "AboveColin": {
+      "stars": 1,
+      "description": "",
+      "language": "Python",
+      "archived": false
     },
     "basicfit": {
       "stars": 1,
@@ -76,6 +82,12 @@
       "language": "Python",
       "archived": false
     },
+    "HA-Jev": {
+      "stars": 6,
+      "description": "Home Assistant integration for TypeSafe Jev. Ask a question about your house and get a probability, a choice or a score as an entity.",
+      "language": "Python",
+      "archived": false
+    },
     "HA-Liberty-Global-Gateway": {
       "stars": 1,
       "description": "Home Assistant integration for Liberty Global cable gateways \u2014 Ziggo SmartWifi modem, UPC/Unitymedia Connect Box, Virgin Media Hub. DOCSIS diagnostics, presence detection, SSDP auto-discovery. Local polling.",
@@ -98,6 +110,12 @@
       "stars": 2,
       "description": "Claude Code skill for the Hevy workout API: both the v1 public API and the reverse-engineered app API, plus workflows for planning a session from training history.",
       "language": "Shell",
+      "archived": false
+    },
+    "jevclient": {
+      "stars": 1,
+      "description": "Async Python client for TypeSafe Jev. Typed questions in, probabilities and choices out, no prose to parse.",
+      "language": "Python",
       "archived": false
     },
     "liberty-global-gateway": {
@@ -271,6 +289,10 @@
     [
       "2026-09-14",
       58
+    ],
+    [
+      "2026-09-18",
+      66
     ]
   ]
 }
