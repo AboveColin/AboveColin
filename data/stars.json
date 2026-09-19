@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-18T09:50:54Z",
+  "generated_at": "2026-09-19T09:34:54Z",
   "user": "AboveColin",
   "public_repos_own": 35,
-  "total_stars": 66,
+  "total_stars": 78,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -83,8 +83,8 @@
       "archived": false
     },
     "HA-Jev": {
-      "stars": 6,
-      "description": "Home Assistant integration for TypeSafe Jev. Ask a question about your house and get a probability, a choice or a score as an entity.",
+      "stars": 17,
+      "description": "Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: typed answers as sensors, four actions for automations, and a conversation agent for Assist.",
       "language": "Python",
       "archived": false
     },
@@ -137,7 +137,7 @@
       "archived": false
     },
     "remote-for-xirp": {
-      "stars": 3,
+      "stars": 4,
       "description": "Remote For Xirp \u2014 mobile web control surface for the Xirp agent daemon: machines, projects, sessions, live tmux pane. Unofficial.",
       "language": "JavaScript",
       "archived": false
@@ -293,6 +293,10 @@
     [
       "2026-09-18",
       66
+    ],
+    [
+      "2026-09-19",
+      78
     ]
   ]
 }
