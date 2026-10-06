@@ -10,6 +10,7 @@
   <a href="mailto:colin@cdevries.dev"><img alt="Email" src="https://img.shields.io/badge/colin%40cdevries.dev-2a78d6?style=flat-square&logo=maildotru&logoColor=white"></a>
   <a href="https://github.com/AboveColin?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/33%20own%20repos-0d1117?style=flat-square&logo=github&logoColor=white"></a>
   <a href="https://hacs.xyz"><img alt="HACS" src="https://img.shields.io/badge/3%20in%20HACS-41bdf5?style=flat-square&logo=homeassistant&logoColor=white"></a>
+  <a href="https://github.com/sponsors/AboveColin"><img alt="Sponsor" src="https://img.shields.io/badge/Sponsor-db61a2?style=flat-square&logo=githubsponsors&logoColor=white"></a>
 </p>
 
 Most of what I publish follows one shape. I find a device or a service whose API
@@ -79,6 +80,10 @@ that uses it.
   control surface for a coding agent daemon.
 - [hevy-api-knowledge](https://github.com/AboveColin/hevy-api-knowledge) documents
   the Hevy workout API, both the public v1 and the one the app actually uses.
+
+Everything above is free and stays free. If my work is useful to you, you can
+support it through [GitHub Sponsors](https://github.com/sponsors/AboveColin).
+Sponsorship is voluntary and unlocks nothing.
 
 <p align="center">
   <a href="https://cdevries.dev">cdevries.dev</a> &middot;
