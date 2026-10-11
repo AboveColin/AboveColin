@@ -28,20 +28,20 @@ reports the revision it was given.
 <!-- stars:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=9e0d3b59">
-    <img alt="Cumulative GitHub stars over time: 137 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=9e0d3b59" width="880">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=8327dd7f">
+    <img alt="Cumulative GitHub stars over time: 138 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=8327dd7f" width="880">
   </picture>
 </p>
 
 <p align="center">
-  <strong>137</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-10-10
+  <strong>138</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-10-11
 </p>
 
 ### Most starred
 
 | Project | What it does | Stars |
 | --- | --- | --: |
-| [HA-Jev](https://github.com/AboveColin/HA-Jev) | Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: ty... | 74 |
+| [HA-Jev](https://github.com/AboveColin/HA-Jev) | Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: ty... | 75 |
 | [HA-Philips-Pet-Series](https://github.com/AboveColin/HA-Philips-Pet-Series) | Home Assistant integration for Philips Pet Series smart pet feeders. Feed from a dashboard, u... | 14 |
 | [HA-Forgejo](https://github.com/AboveColin/HA-Forgejo) | Home Assistant integration for Forgejo | 5 |
 | [HA-Fitdays](https://github.com/AboveColin/HA-Fitdays) | Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) — full body compositio... | 4 |
