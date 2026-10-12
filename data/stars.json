@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-11T11:27:04Z",
+  "generated_at": "2026-10-12T13:14:57Z",
   "user": "AboveColin",
   "public_repos_own": 36,
-  "total_stars": 138,
+  "total_stars": 139,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -167,7 +167,7 @@
       "archived": false
     },
     "tuya-mobile": {
-      "stars": 2,
+      "stars": 3,
       "description": "Pure-Python reimplementation of the Tuya mobile-app API security layer: request signing, the encrypted mobile API client and MQTT credential derivation. No native libthing_security.so needed.",
       "language": "Python",
       "archived": false
@@ -357,6 +357,10 @@
     [
       "2026-10-11",
       138
+    ],
+    [
+      "2026-10-12",
+      139
     ]
   ]
 }
