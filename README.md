@@ -28,13 +28,13 @@ reports the revision it was given.
 <!-- stars:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=7fddbf19">
-    <img alt="Cumulative GitHub stars over time: 143 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=7fddbf19" width="880">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=146157c4">
+    <img alt="Cumulative GitHub stars over time: 144 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=146157c4" width="880">
   </picture>
 </p>
 
 <p align="center">
-  <strong>143</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-10-19
+  <strong>144</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-10-20
 </p>
 
 ### Most starred
@@ -48,9 +48,9 @@ reports the revision it was given.
 | [petsseries](https://github.com/AboveColin/petsseries) | Unofficial async Python client for the Philips Pet Series (Versuni) API: homes, devices, meal... | 4 |
 | [remote-for-xirp](https://github.com/AboveColin/remote-for-xirp) | Remote For Xirp — mobile web control surface for the Xirp agent daemon: machines, projects, s... | 4 |
 | [fitdays](https://github.com/AboveColin/fitdays) | Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API — Robi S6 and r... | 3 |
+| [switchMCP](https://github.com/AboveColin/switchMCP) | Remote-manage a homebrew Nintendo Switch from an AI agent, over MCP. Atmosphère sysmodule + P... | 3 |
 | [tuya-mobile](https://github.com/AboveColin/tuya-mobile) | Pure-Python reimplementation of the Tuya mobile-app API security layer: request signing, the... | 3 |
 | [HA-Basic-Fit](https://github.com/AboveColin/HA-Basic-Fit) | Home Assistant integration for Basic-Fit (HACS) — visits, membership, body measurements and b... | 2 |
-| [HA-Traefik](https://github.com/AboveColin/HA-Traefik) | Home Assistant integration for Traefik: a device per route, named after the hostname it serves | 2 |
 <!-- stars:end -->
 
 ### Device to dashboard
