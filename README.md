@@ -28,13 +28,13 @@ reports the revision it was given.
 <!-- stars:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=6a940f57">
-    <img alt="Cumulative GitHub stars over time: 145 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=6a940f57" width="880">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=5f20ff95">
+    <img alt="Cumulative GitHub stars over time: 146 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=5f20ff95" width="880">
   </picture>
 </p>
 
 <p align="center">
-  <strong>145</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-10-23
+  <strong>146</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-10-25
 </p>
 
 ### Most starred
@@ -45,9 +45,9 @@ reports the revision it was given.
 | [HA-Philips-Pet-Series](https://github.com/AboveColin/HA-Philips-Pet-Series) | Home Assistant integration for Philips Pet Series smart pet feeders. Feed from a dashboard, u... | 14 |
 | [HA-Forgejo](https://github.com/AboveColin/HA-Forgejo) | Home Assistant integration for Forgejo | 5 |
 | [HA-Fitdays](https://github.com/AboveColin/HA-Fitdays) | Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) — full body compositio... | 4 |
+| [fitdays](https://github.com/AboveColin/fitdays) | Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API — Robi S6 and r... | 4 |
 | [petsseries](https://github.com/AboveColin/petsseries) | Unofficial async Python client for the Philips Pet Series (Versuni) API: homes, devices, meal... | 4 |
 | [remote-for-xirp](https://github.com/AboveColin/remote-for-xirp) | Remote For Xirp — mobile web control surface for the Xirp agent daemon: machines, projects, s... | 4 |
-| [fitdays](https://github.com/AboveColin/fitdays) | Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API — Robi S6 and r... | 3 |
 | [switchMCP](https://github.com/AboveColin/switchMCP) | Remote-manage a homebrew Nintendo Switch from an AI agent, over MCP. Atmosphère sysmodule + P... | 3 |
 | [tuya-mobile](https://github.com/AboveColin/tuya-mobile) | Pure-Python reimplementation of the Tuya mobile-app API security layer: request signing, the... | 3 |
 | [HA-Basic-Fit](https://github.com/AboveColin/HA-Basic-Fit) | Home Assistant integration for Basic-Fit (HACS) — visits, membership, body measurements and b... | 2 |
