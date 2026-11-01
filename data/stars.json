@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-28T11:24:05Z",
+  "generated_at": "2026-11-01T11:53:12Z",
   "user": "AboveColin",
   "public_repos_own": 36,
-  "total_stars": 148,
+  "total_stars": 150,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -83,7 +83,7 @@
       "archived": false
     },
     "HA-Jev": {
-      "stars": 81,
+      "stars": 82,
       "description": "Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: typed answers as sensors, four actions for automations, and a conversation agent for Assist.",
       "language": "Python",
       "archived": false
@@ -95,7 +95,7 @@
       "archived": false
     },
     "HA-Philips-Pet-Series": {
-      "stars": 14,
+      "stars": 15,
       "description": "Home Assistant integration for Philips Pet Series smart pet feeders. Feed from a dashboard, use meals in automations, and watch the camera.",
       "language": "Python",
       "archived": false
@@ -385,6 +385,10 @@
     [
       "2026-10-28",
       148
+    ],
+    [
+      "2026-11-01",
+      150
     ]
   ]
 }
