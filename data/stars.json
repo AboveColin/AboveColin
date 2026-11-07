@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-06T12:59:59Z",
+  "generated_at": "2026-11-07T11:47:07Z",
   "user": "AboveColin",
   "public_repos_own": 36,
-  "total_stars": 154,
+  "total_stars": 157,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -71,7 +71,7 @@
       "archived": false
     },
     "HA-Fitdays": {
-      "stars": 4,
+      "stars": 5,
       "description": "Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) \u2014 full body composition from the cloud, not just BLE weight",
       "language": "Python",
       "archived": false
@@ -83,7 +83,7 @@
       "archived": false
     },
     "HA-Jev": {
-      "stars": 86,
+      "stars": 88,
       "description": "Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: typed answers as sensors, four actions for automations, and a conversation agent for Assist.",
       "language": "Python",
       "archived": false
@@ -401,6 +401,10 @@
     [
       "2026-11-06",
       154
+    ],
+    [
+      "2026-11-07",
+      157
     ]
   ]
 }

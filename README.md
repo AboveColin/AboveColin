@@ -28,23 +28,23 @@ reports the revision it was given.
 <!-- stars:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=64a4e8f0">
-    <img alt="Cumulative GitHub stars over time: 154 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=64a4e8f0" width="880">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=daa9ad3b">
+    <img alt="Cumulative GitHub stars over time: 157 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=daa9ad3b" width="880">
   </picture>
 </p>
 
 <p align="center">
-  <strong>154</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-11-06
+  <strong>157</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-11-07
 </p>
 
 ### Most starred
 
 | Project | What it does | Stars |
 | --- | --- | --: |
-| [HA-Jev](https://github.com/AboveColin/HA-Jev) | Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: ty... | 86 |
+| [HA-Jev](https://github.com/AboveColin/HA-Jev) | Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: ty... | 88 |
 | [HA-Philips-Pet-Series](https://github.com/AboveColin/HA-Philips-Pet-Series) | Home Assistant integration for Philips Pet Series smart pet feeders. Feed from a dashboard, u... | 15 |
+| [HA-Fitdays](https://github.com/AboveColin/HA-Fitdays) | Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) — full body compositio... | 5 |
 | [HA-Forgejo](https://github.com/AboveColin/HA-Forgejo) | Home Assistant integration for Forgejo | 5 |
-| [HA-Fitdays](https://github.com/AboveColin/HA-Fitdays) | Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) — full body compositio... | 4 |
 | [fitdays](https://github.com/AboveColin/fitdays) | Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API — Robi S6 and r... | 4 |
 | [petsseries](https://github.com/AboveColin/petsseries) | Unofficial async Python client for the Philips Pet Series (Versuni) API: homes, devices, meal... | 4 |
 | [remote-for-xirp](https://github.com/AboveColin/remote-for-xirp) | Remote For Xirp — mobile web control surface for the Xirp agent daemon: machines, projects, s... | 4 |
