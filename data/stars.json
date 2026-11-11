@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-10T13:33:36Z",
+  "generated_at": "2026-11-11T12:46:34Z",
   "user": "AboveColin",
   "public_repos_own": 36,
-  "total_stars": 158,
+  "total_stars": 160,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -47,7 +47,7 @@
       "archived": false
     },
     "fitdays": {
-      "stars": 4,
+      "stars": 5,
       "description": "Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API \u2014 Robi S6 and rebadged siblings",
       "language": "Python",
       "archived": false
@@ -113,7 +113,7 @@
       "archived": false
     },
     "jevclient": {
-      "stars": 2,
+      "stars": 3,
       "description": "Async Python client for TypeSafe Jev. Typed questions in, probabilities and choices out, no prose to parse.",
       "language": "Python",
       "archived": false
@@ -409,6 +409,10 @@
     [
       "2026-11-10",
       158
+    ],
+    [
+      "2026-11-11",
+      160
     ]
   ]
 }
