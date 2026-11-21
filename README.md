@@ -28,13 +28,13 @@ reports the revision it was given.
 <!-- stars:start -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=1f965ad1">
-    <img alt="Cumulative GitHub stars over time: 161 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=1f965ad1" width="880">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-dark.svg?v=f98d784f">
+    <img alt="Cumulative GitHub stars over time: 162 stars across 28 repositories" src="https://raw.githubusercontent.com/AboveColin/AboveColin/main/assets/stars-light.svg?v=f98d784f" width="880">
   </picture>
 </p>
 
 <p align="center">
-  <strong>161</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-11-19
+  <strong>162</strong> stars &middot; <strong>36</strong> own public repositories &middot; <strong>28</strong> of them starred by someone &middot; last star 2026-11-21
 </p>
 
 ### Most starred
@@ -46,8 +46,8 @@ reports the revision it was given.
 | [HA-Fitdays](https://github.com/AboveColin/HA-Fitdays) | Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) — full body compositio... | 5 |
 | [HA-Forgejo](https://github.com/AboveColin/HA-Forgejo) | Home Assistant integration for Forgejo | 5 |
 | [fitdays](https://github.com/AboveColin/fitdays) | Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API — Robi S6 and r... | 5 |
+| [remote-for-xirp](https://github.com/AboveColin/remote-for-xirp) | Remote For Xirp — mobile web control surface for the Xirp agent daemon: machines, projects, s... | 5 |
 | [petsseries](https://github.com/AboveColin/petsseries) | Unofficial async Python client for the Philips Pet Series (Versuni) API: homes, devices, meal... | 4 |
-| [remote-for-xirp](https://github.com/AboveColin/remote-for-xirp) | Remote For Xirp — mobile web control surface for the Xirp agent daemon: machines, projects, s... | 4 |
 | [switchMCP](https://github.com/AboveColin/switchMCP) | Remote-manage a homebrew Nintendo Switch from an AI agent, over MCP. Atmosphère sysmodule + P... | 4 |
 | [jevclient](https://github.com/AboveColin/jevclient) | Async Python client for TypeSafe Jev. Typed questions in, probabilities and choices out, no p... | 3 |
 | [tuya-mobile](https://github.com/AboveColin/tuya-mobile) | Pure-Python reimplementation of the Tuya mobile-app API security layer: request signing, the... | 3 |

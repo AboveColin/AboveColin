@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-19T14:29:25Z",
+  "generated_at": "2026-11-21T13:31:45Z",
   "user": "AboveColin",
   "public_repos_own": 36,
-  "total_stars": 161,
+  "total_stars": 162,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -137,7 +137,7 @@
       "archived": false
     },
     "remote-for-xirp": {
-      "stars": 4,
+      "stars": 5,
       "description": "Remote For Xirp \u2014 mobile web control surface for the Xirp agent daemon: machines, projects, sessions, live tmux pane. Unofficial.",
       "language": "Go",
       "archived": false
@@ -417,6 +417,10 @@
     [
       "2026-11-19",
       161
+    ],
+    [
+      "2026-11-21",
+      162
     ]
   ]
 }
