@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T13:31:45Z",
+  "generated_at": "2026-11-22T13:25:20Z",
   "user": "AboveColin",
   "public_repos_own": 36,
-  "total_stars": 162,
+  "total_stars": 163,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -83,7 +83,7 @@
       "archived": false
     },
     "HA-Jev": {
-      "stars": 89,
+      "stars": 90,
       "description": "Ask your house a question, get a number back. Home Assistant integration for TypeSafe Jev: typed answers as sensors, four actions for automations, and a conversation agent for Assist.",
       "language": "Python",
       "archived": false
@@ -421,6 +421,10 @@
     [
       "2026-11-21",
       162
+    ],
+    [
+      "2026-11-22",
+      163
     ]
   ]
 }
