@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-24T15:57:30Z",
+  "generated_at": "2026-11-26T15:25:14Z",
   "user": "AboveColin",
   "public_repos_own": 36,
-  "total_stars": 165,
+  "total_stars": 169,
   "repos": {
     "1001TL_scripts": {
       "stars": 2,
@@ -47,7 +47,7 @@
       "archived": false
     },
     "fitdays": {
-      "stars": 5,
+      "stars": 6,
       "description": "Unofficial async Python client for the Fitdays (ICOMON) smart-scale cloud API \u2014 Robi S6 and rebadged siblings",
       "language": "Python",
       "archived": false
@@ -59,19 +59,19 @@
       "archived": false
     },
     "HA-Basic-Fit": {
-      "stars": 2,
+      "stars": 3,
       "description": "Home Assistant integration for Basic-Fit (HACS) \u2014 visits, membership, body measurements and badges as sensors.",
       "language": "Python",
       "archived": false
     },
     "HA-ENGIE-NL": {
-      "stars": 1,
+      "stars": 2,
       "description": "ENGIE Energie NL integration for Home Assistant",
       "language": "Python",
       "archived": false
     },
     "HA-Fitdays": {
-      "stars": 5,
+      "stars": 6,
       "description": "Home Assistant integration for Fitdays / ICOMON smart scales (Robi S6) \u2014 full body composition from the cloud, not just BLE weight",
       "language": "Python",
       "archived": false
@@ -433,6 +433,10 @@
     [
       "2026-11-24",
       165
+    ],
+    [
+      "2026-11-26",
+      169
     ]
   ]
 }
